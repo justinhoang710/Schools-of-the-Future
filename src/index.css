@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #080b10;
+}
+
+.hero-gradient {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(6, 214, 160, 0.2), transparent 38%),
+    radial-gradient(circle at 85% 10%, rgba(42, 125, 225, 0.3), transparent 35%),
+    linear-gradient(160deg, #070a11 0%, #0d121c 45%, #0a0f17 100%);
+}
+
+.noise-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.05;
+  background-image: radial-gradient(circle at 25% 20%, #fff 0.5px, transparent 0.8px);
+  background-size: 3px 3px;
+  z-index: 0;
+}
+
+.card {
+  @apply rounded-2xl border border-white/10 bg-panel/60 backdrop-blur;
+}
+
+.btn-primary {
+  @apply rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-black transition hover:brightness-110;
+}
+
+.btn-secondary {
+  @apply rounded-xl border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-accent hover:text-accent;
+}
+
+.chip {
+  @apply rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:border-accent;
+}
+
+.chip-active {
+  @apply border-accent bg-accent/20 text-accent;
+}
