@@ -68,21 +68,5 @@ npm run preview
 - `npm run build` - create production build in `dist/`
 - `npm run preview` - preview production build locally
 
-## GitHub Initialization
 
-If this folder is not yet a git repo:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Schools of the Future website"
-```
-
-Then create a GitHub repository and connect it:
-
-```bash
-git branch -M main
-git remote add origin <your-repo-url>
-git push -u origin main
-```
 
